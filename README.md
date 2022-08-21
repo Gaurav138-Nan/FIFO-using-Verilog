@@ -40,7 +40,6 @@ the synchronizer.
 
 
 
-**
 **THE FIGURE:
 
 ![image](https://user-images.githubusercontent.com/75901646/185785233-116cb225-d53b-4390-ae91-9874c086dacd.png)
@@ -83,5 +82,39 @@ status signal implying that the buffer was full.
 
 As long as the fifo is not empty ,applying read_enable signal allowed the output of data from the buffer and when it reached the 
 final level ,the empty status signal became high signifying that the buffer has become empty.
+
+
+
+
+
+
+
+
+
+
+
+**SYNCHRONOUS FIFO:**
+A Synchronous FIFO is a First-In-First-Out queue in which there is a single clock pulse for both data write and data read. In Synchronous FIFO the read and write operations are performed at the same rate. The number of rows is called depth or number of words of FIFO and number of bits in each row is called as width or word length of FIFO. This kind of FIFO is termed as Synchronous because the rate of read and write operations are same.
+
+
+
+
+**DESIGN**:
+Here we have designed a 16 bit synchronous FIFO with a FIFO having a depth of 8.
+We have first designed the FIFO using Verilog in MODELSIM and then tested the design using a testbench created in the same environment.
+The final waves associated with the testbench has been plotted to observe the working of the designed system.
+
+
+
+**FIFO STRUCTURE:**
+![image](https://user-images.githubusercontent.com/75901646/185786080-d90f24cc-1662-4af0-ad77-a08f3d8167b7.png)
+
+
+
+**SIMULATION WAVEFORM:**
+![image](https://user-images.githubusercontent.com/75901646/185786321-29a1b6bf-31f6-4f2a-8392-fda01d6447d4.png)
+
+
+
 
 
