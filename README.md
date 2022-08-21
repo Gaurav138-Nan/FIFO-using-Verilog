@@ -2,10 +2,17 @@
 
 Here we are implementing synchronous as well as asynchronous FIFO using Verilog.
 
-****ASYNCHRONOUS FIFO:********************
+**ASYNCHRONOUS FIFO:**
 An asynchronous FIFO refers to a FIFO design in which the FIFO buffer is accessed while reading and writing 
 using two different clock domains.That is unlike synchronous FIFO ,the speed of writing and reading are 
 asynchronous to one another.
+
+
+
+
+
+
+
 
 
 **Design:**
@@ -22,14 +29,27 @@ the reader pointer and the writer pointer in both clock domains.
 Thus the final main component of an asynchronous fifo is a 2 FF synchronizer used for 
 CDC (clock domain crossing).
 
+Another important component of the above design is the usage of binarytogray and graytobinary
+converter specifically because gray codes are less prone to metastability changes inside 
+the synchronizer.
 
 
 
 
 
 
+
+
+**
+**THE FIGURE:
 
 ![image](https://user-images.githubusercontent.com/75901646/185785233-116cb225-d53b-4390-ae91-9874c086dacd.png)
+
+
+
+
+
+
 
 
 
@@ -40,7 +60,13 @@ CDC (clock domain crossing).
 **Simulation WaveForm:
 **
 
+
+
 ![image](https://user-images.githubusercontent.com/75901646/185785278-a03772c8-80a5-4a98-bb2a-fdf56a52efec.png)
+
+
+
+
 
 
 
