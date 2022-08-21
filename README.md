@@ -93,6 +93,18 @@ final level ,the empty status signal became high signifying that the buffer has 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 **SYNCHRONOUS FIFO:**
 A Synchronous FIFO is a First-In-First-Out queue in which there is a single clock pulse for both data write and data read. In Synchronous FIFO the read and write operations are performed at the same rate. The number of rows is called depth or number of words of FIFO and number of bits in each row is called as width or word length of FIFO. This kind of FIFO is termed as Synchronous because the rate of read and write operations are same.
 
