@@ -8,8 +8,13 @@ using two different clock domains.That is unlike synchronous FIFO ,the speed of 
 asynchronous to one another.
 
 
-
+**Design:**
 The design that we are going to do in verilog is based on the below diagram.
+Our FIFO has a depth of 8 and has a word size of 16 bits.
+
+
+
+
 
 ![image](https://user-images.githubusercontent.com/75901646/185785233-116cb225-d53b-4390-ae91-9874c086dacd.png)
 
@@ -18,5 +23,17 @@ The design that we are going to do in verilog is based on the below diagram.
 **
 
 ![image](https://user-images.githubusercontent.com/75901646/185785278-a03772c8-80a5-4a98-bb2a-fdf56a52efec.png)
+
+
+
+**Observations**:
+The above waveform was plotted in EDA PLAYGROUND.
+
+The above waveform shows that as long as the write enable signal was high,write pointer was incremented and data was 
+inserted into the fifo buffer.On insertion of the final level's data we were given a high signal in the output of the FULL
+status signal implying that the buffer was full.
+
+As long as the fifo is not empty ,applying read_enable signal allowed the output of data from the buffer and when it reached the 
+final level ,the empty status signal became high signifying that the buffer has become empty.
 
 
