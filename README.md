@@ -9,5 +9,6 @@ asynchronous to one another.
 
 The design that we are going to do in verilog is based on the below diagram.
 
-![image](https://user-images.githubusercontent.com/75901646/185785206-d911ef2e-0113-4292-a077-004142a57e61.png)
+![image](https://user-images.githubusercontent.com/75901646/185785233-116cb225-d53b-4390-ae91-9874c086dacd.png)
+
 
