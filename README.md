@@ -124,14 +124,15 @@ The final waves associated with the testbench has been plotted to observe the wo
 
 
 **SIMULATION WAVEFORM:**
-![image](https://user-images.githubusercontent.com/75901646/185786321-29a1b6bf-31f6-4f2a-8392-fda01d6447d4.png)
+![image](https://user-images.githubusercontent.com/75901646/185786709-ad7bd49c-1e47-44d3-af20-303455e7e5b8.png)
+
 
 
 
 
 **OBSERVATIONS**:
 The above the waveforms function very similarly to their asynchronous counterparts with the only variation of the usage of a single
-clock.
+clock.The only addition in our waveform is the implementation of underflow and overflow logic.
 
 
 
