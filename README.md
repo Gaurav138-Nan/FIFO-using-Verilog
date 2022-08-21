@@ -2,7 +2,7 @@
 
 Here we are implementing synchronous as well as asynchronous FIFO using Verilog.
 
-**ASYNCHRONOUS FIFO:**
+****ASYNCHRONOUS FIFO:********************
 An asynchronous FIFO refers to a FIFO design in which the FIFO buffer is accessed while reading and writing 
 using two different clock domains.That is unlike synchronous FIFO ,the speed of writing and reading are 
 asynchronous to one another.
