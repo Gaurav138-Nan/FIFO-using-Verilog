@@ -113,7 +113,7 @@ A Synchronous FIFO is a First-In-First-Out queue in which there is a single cloc
 
 **DESIGN**:
 Here we have designed a 16 bit synchronous FIFO with a FIFO having a depth of 8.
-We have first designed the FIFO using Verilog in MODELSIM and then tested the design using a testbench created in the same environment.
+We have first designed the FIFO using Verilog in EDA PLAYGROUND and then tested the design using a testbench created in the same environment.
 The final waves associated with the testbench has been plotted to observe the working of the designed system.
 
 
@@ -125,6 +125,13 @@ The final waves associated with the testbench has been plotted to observe the wo
 
 **SIMULATION WAVEFORM:**
 ![image](https://user-images.githubusercontent.com/75901646/185786321-29a1b6bf-31f6-4f2a-8392-fda01d6447d4.png)
+
+
+
+
+**OBSERVATIONS**:
+The above the waveforms function very similarly to their asynchronous counterparts with the only variation of the usage of a single
+clock.
 
 
 
