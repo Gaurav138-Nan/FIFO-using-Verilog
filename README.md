@@ -12,6 +12,19 @@ asynchronous to one another.
 The design that we are going to do in verilog is based on the below diagram.
 Our FIFO has a depth of 8 and has a word size of 16 bits.
 
+The below design consists of a reader module,writer module and a fifo buffer.
+These are the main components of any fifo.
+
+But here as we are operating with two
+clock domains, inorder to generate empty and full conditions of the buffer we need
+the reader pointer and the writer pointer in both clock domains.
+
+Thus the final main component of an asynchronous fifo is a 2 FF synchronizer used for 
+CDC (clock domain crossing).
+
+
+
+
 
 
 
@@ -19,10 +32,19 @@ Our FIFO has a depth of 8 and has a word size of 16 bits.
 ![image](https://user-images.githubusercontent.com/75901646/185785233-116cb225-d53b-4390-ae91-9874c086dacd.png)
 
 
+
+
+
+
+
 **Simulation WaveForm:
 **
 
 ![image](https://user-images.githubusercontent.com/75901646/185785278-a03772c8-80a5-4a98-bb2a-fdf56a52efec.png)
+
+
+
+
 
 
 
